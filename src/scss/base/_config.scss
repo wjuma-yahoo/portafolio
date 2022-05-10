@@ -1,0 +1,24 @@
+// Fuente principal Google Font "UBUNTU"
+$fuente-principal: "Ubuntu", sans-serif;
+
+// Colores principales https://colorhunt.co/palette/a85cf95534a54b7be56fdfdf
+$morado: #a85cf9;
+$morado-oscuro: #5534a5;
+$fondo-pantalla: #261c2c;
+$azul: #4b7be5;
+$azul-claro: #6fdfdf;
+$negro: #383838;
+$blanco: #fff;
+
+// Medida de grosor de las fuentes
+$font-weights: (
+  "regular": 400,
+  "bold": 700,
+);
+
+$font-sizes: (
+  "body": 1.6rem,
+  "h1": 4rem,
+  "h2": 3.6rem,
+  "h3": 3rem,
+);

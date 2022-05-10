@@ -1,10 +1,10 @@
 export const Portfolio = () => {
   return (
     <>
-      <section className="home">
+      <section className="inicio">
         <h2>Hi! My name Is</h2>
-        <h1>
-          Wilson <span>Juma Alcantara</span>
+        <h1 className="inicio__name">
+          Wilson <span className="inicio__name--apellido">Juma</span>
         </h1>
         <h2>Web Developer, Designer & Programmer</h2>
         <div className="social">
@@ -21,9 +21,7 @@ export const Portfolio = () => {
             <i className="fa-brands fa-github"></i>
           </a>
         </div>
-        <footer className="footer">
-          &copy; Copyright 2022 | Todos los derechos reservados
-        </footer>
+        <footer className="footer">&copy; Copyright 2022</footer>
       </section>
     </>
   );

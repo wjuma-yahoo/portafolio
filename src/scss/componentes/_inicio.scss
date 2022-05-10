@@ -1,0 +1,29 @@
+@use "../base/config" as c;
+@use "../base/funciones" as f;
+
+.inicio {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+      to right,
+      rgba(c.$fondo-pantalla, 0.9),
+      rgba(c.$morado-oscuro, 0.3)
+    ),
+    url(../../img/model-1.jpg) center top;
+  background-size: cover;
+
+  &__name {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    border-bottom: 2px soid c.$blanco;
+
+    &--apellido {
+      color: c.$azul-claro;
+      font-weight: f.weight(bold);
+    }
+  }
+}

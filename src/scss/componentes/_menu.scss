@@ -1,0 +1,49 @@
+@use "../base/config" as c;
+@use "../base/funciones" as f;
+@use "../base/mixins" as m;
+
+.header__menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  @include m.transition-ease;
+
+  &-burger {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    width: 28px;
+    height: 3px;
+    background-color: f.set-text-color(c.$morado-oscuro);
+    @include m.transition-ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      width: 28px;
+      height: 3px;
+      background-color: f.set-text-color(c.$morado-oscuro);
+      @include m.transition-ease;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      width: 20px;
+      height: 3px;
+      background-color: f.set-text-color(c.$morado-oscuro);
+      @include m.transition-ease;
+    }
+
+    &.open {
+      transform: rotateX(720deg);
+      background: transparent;
+    }
+  }
+}

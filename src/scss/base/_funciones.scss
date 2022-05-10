@@ -1,0 +1,17 @@
+@use "config" as c;
+
+@function weight($thickness: regular) {
+  @return map-get(c.$font-weights, $thickness);
+}
+
+@function sizes($thickness: body) {
+  @return map-get(c.$font-sizes, $thickness);
+}
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40%) {
+    @return c.$blanco;
+  } @else {
+    @return c.$negro;
+  }
+}
